@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>boxwatchr</Name>
+  <Repository>ghcr.io/nulcraft/boxwatchr:latest</Repository>
+  <Registry>https://github.com/nulcraft/boxwatchr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/nulcraft/boxwatchr</Project>
+  <ReadMe/>
+  <Overview>A self-hosted email filtering daemon that watches your IMAP mailbox, scores every incoming message with a spam engine, runs it through your custom rules, and takes action automatically. No cloud, no subscriptions, just your server doing exactly what you tell it to.</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8143]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/nulcraft/boxwatchr/refs/heads/main/images/logo/64px.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1774460033</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config Path" Target="/app/config" Default="/mnt/user/appdata/boxwatchr/config" Mode="rw" Description="The directory to store your boxwatchr configuration files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/boxwatchr/config</Config>
+  <Config Name="Data Path" Target="/app/data" Default="/mnt/user/appdata/boxwatchr/data" Mode="rw" Description="The directory to store your boxwatchr data persistence." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/boxwatchr/data</Config>
+  <Config Name="Web Interface Port" Target="8143" Default="80" Mode="tcp" Description="The web interface port." Type="Port" Display="always" Required="true" Mask="false">8143</Config>
+  <Config Name="rspamd Web Interface Port" Target="11334" Default="11334" Mode="tcp" Description="The rspamd web interface port." Type="Port" Display="always" Required="true" Mask="false">11334</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="The user to run the container at on the inside." Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="The user's group to run the container software at on the inside." Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="TZ" Target="TZ" Default="UTC" Mode="" Description="The timezone to display logs and other vital timestamps in." Type="Variable" Display="always" Required="true" Mask="false">America/Denver</Config>
+  <Config Name="rspamd Web Interface Password" Target="RSPAMD_PASSWORD" Default="" Mode="" Description="Set a custom password for the rspamd web interface. Otherwise, if left blank, a random password will be generated and provided at each startup in the terminal." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <TailscaleStateDir/>
+</Container>
