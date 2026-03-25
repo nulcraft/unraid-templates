@@ -7,9 +7,9 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/nulcraft/boxwatchr/issues</Support>
   <Project>https://github.com/nulcraft/boxwatchr</Project>
-  <ReadMe/>
+  <ReadMe>https://github.com/nulcraft/boxwatchr/blob/main/README.md</ReadMe>
   <Overview>A self-hosted email filtering daemon that watches your IMAP mailbox, scores every incoming message with a spam engine, runs it through your custom rules, and takes action automatically. No cloud, no subscriptions, just your server doing exactly what you tell it to.</Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8143]</WebUI>
