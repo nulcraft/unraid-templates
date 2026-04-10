@@ -24,7 +24,7 @@
   <Requires/>
   <Config Name="Config Path" Target="/app/config" Default="/mnt/user/appdata/boxwatchr/config" Mode="rw" Description="The directory to store your boxwatchr configuration files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/boxwatchr/config</Config>
   <Config Name="Data Path" Target="/app/data" Default="/mnt/user/appdata/boxwatchr/data" Mode="rw" Description="The directory to store your boxwatchr data persistence." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/boxwatchr/data</Config>
-  <Config Name="Web Interface Port" Target="8143" Default="80" Mode="tcp" Description="The web interface port." Type="Port" Display="always" Required="true" Mask="false">8143</Config>
+  <Config Name="Web Interface Port" Target="8143" Default="8143" Mode="tcp" Description="The web interface port." Type="Port" Display="always" Required="true" Mask="false">8143</Config>
   <Config Name="rspamd Web Interface Port" Target="11334" Default="11334" Mode="tcp" Description="The rspamd web interface port." Type="Port" Display="always" Required="true" Mask="false">11334</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="The user to run the container at on the inside." Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="The user's group to run the container software at on the inside." Type="Variable" Display="always" Required="true" Mask="false">100</Config>
